@@ -1,2 +1,2 @@
 # MagicAlerts
-asdasdsad
+Requiere de tailwind
