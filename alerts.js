@@ -1,15 +1,8 @@
  (function () {
     function showAlert(
-      message: string,
-      type: string = "info",
-      options: {
-        color?: string;
-        size?: string;
-        duration?: number;
-        textColor?: string;
-        onCancel?: () => void;
-        onAccept?: () => void;
-      } = {}
+      message,
+      type = "info",
+      options = {}
     ) {
       const alertDiv = document.createElement("div");
       alertDiv.role = "alert";
@@ -97,5 +90,5 @@
       }
     }
 
-    (window as any).showAlert = showAlert;
+    window.showAlert = showAlert;
   })();
